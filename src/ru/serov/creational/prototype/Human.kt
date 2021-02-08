@@ -1,7 +1,7 @@
 package ru.serov.creational.prototype
 
 class Human(val firstName: String, val secondName: String,
-var age: Int,var address: Address): Cloneable {
+var age: Int,var address: Address): ICloneable {
 
     override fun copy(): Any {
         // Воспользуемся небезопасным приведением, так как элемент, который

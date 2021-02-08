@@ -1,5 +1,5 @@
 package ru.serov.creational.prototype
 
-interface Cloneable {
+interface ICloneable {
     fun copy(): Any
 }
