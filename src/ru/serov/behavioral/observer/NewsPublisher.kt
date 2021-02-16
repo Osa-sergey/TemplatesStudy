@@ -2,15 +2,15 @@ package ru.serov.behavioral.observer
 
 import java.util.*
 
-class NewsPublisher(var title:String, var text:String): Observable {
+class NewsPublisher(var title:String, var text:String): IObservable {
 
-    private val subscribers: LinkedList<Observer> = LinkedList()
+    private val subscribers: LinkedList<IObserver> = LinkedList()
 
-    override fun addObserver(observer: Observer) {
+    override fun addObserver(observer: IObserver) {
         if (!subscribers.contains(observer)) subscribers.add(observer)
     }
 
-    override fun removeObserver(observer: Observer) {
+    override fun removeObserver(observer: IObserver) {
         subscribers.remove(observer)
     }
 

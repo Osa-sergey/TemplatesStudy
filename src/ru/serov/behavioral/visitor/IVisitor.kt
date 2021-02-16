@@ -1,6 +1,6 @@
 package ru.serov.behavioral.visitor
 
-interface Visitor {
+interface IVisitor {
     fun visit(e: EngineElement)
     fun visit(e: BodyElement)
 }

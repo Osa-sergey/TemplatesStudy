@@ -1,6 +1,6 @@
 package ru.serov.behavioral.templatemethod
 
-abstract class InfoClass(val address: String, val dateOfCreation: String) {
+abstract class AInfoClass(val address: String, val dateOfCreation: String) {
 
     // так как все методы изначально закрыты для переопределения,
     // то закрывать его в Kotlin не нужно

@@ -1,7 +1,8 @@
 package ru.serov.behavioral.templatemethod
 
 
-class SpecifiedInfoClass(address: String, dateOfCreation: String, vararg val authors: Author): InfoClass(address,dateOfCreation) {
+class SpecifiedInfoClass(address: String, dateOfCreation: String, private vararg val authors: Author):
+        AInfoClass(address,dateOfCreation) {
     override fun getSpecificInformation(): String {
         var str = "Авторы: "
         for (author in authors){
@@ -9,5 +10,6 @@ class SpecifiedInfoClass(address: String, dateOfCreation: String, vararg val aut
         }
         return str
     }
+
 
 }

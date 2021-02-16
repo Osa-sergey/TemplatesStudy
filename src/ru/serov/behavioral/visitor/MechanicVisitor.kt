@@ -1,6 +1,6 @@
 package ru.serov.behavioral.visitor
 
-class MechanicVisitor: Visitor {
+class MechanicVisitor: IVisitor {
     override fun visit(e: EngineElement) {
         println("Проверил двигатель")
     }

@@ -1,7 +1,7 @@
 package ru.serov.behavioral.visitor
 
-class BodyElement: Element {
-    override fun accept(v: Visitor) {
+class BodyElement: IElement {
+    override fun accept(v: IVisitor) {
         v.visit(this)
     }
 

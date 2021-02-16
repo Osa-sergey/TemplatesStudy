@@ -1,5 +1,5 @@
 package ru.serov.behavioral.state
 
-interface Station {
+interface IStation {
     fun play()
 }
